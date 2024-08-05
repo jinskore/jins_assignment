@@ -11,6 +11,7 @@ public class Application1 {
         for(int i = 0; i < arr.length; i++){
             int randNum = rand.nextInt(45) + 1;
             arr[i] = randNum;
+            // 중복값 제거
             for(int j = 0; j < i; j++){
                 if(arr[i] == arr[j]){
                     i--;
